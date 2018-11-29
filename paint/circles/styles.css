@@ -1,0 +1,37 @@
+:root {
+  --size: 400px;
+  --color-dark: #353535;
+  --color-medium: #858585;
+  --color-light: #d3d3d3;
+  --color-codemotion: hsl(15, 85%, 56%);
+  --color-codemotion: rgb(238, 95, 47);
+  --color-codemotion: #ee5f2f;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  align-items: center;
+  background-color: var(--color-light);
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  justify-content: center;
+}
+
+.wrapper {
+  /* Presetation properties */
+  border: 1px dashed var(--color-medium);
+  height: var(--size);
+  padding: 1em;
+  box-sizing: content-box;
+  width: var(--size);
+
+  /* Houdini Magic */
+  background: paint(circles);
+}
