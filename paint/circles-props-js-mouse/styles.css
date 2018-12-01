@@ -1,0 +1,42 @@
+:root {
+  --size: 600px;
+  --color-dark: #353535;
+  --color-medium: #858585;
+  --color-light: #d3d3d3;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  align-items: center;
+  background-color: var(--color-light);
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  justify-content: center;
+}
+
+.wrapper {
+  /* Presetation properties */
+  border: 1px dashed var(--color-medium);
+  height: var(--size);
+  padding: 1em;
+  box-sizing: content-box;
+  width: var(--size);
+
+  /* Houdini Magic */
+  --circles-offset: 10;
+  --circles-count: 20;
+  --circles-opacity: 0.5;
+  --circles-strokeWeight: 2;
+  --circles-fill: 0;
+  --pos-x: 0;
+  --pos-y: 0;
+
+  background: paint(circles);
+}

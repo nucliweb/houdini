@@ -4,22 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Houdini samples: Circles with properties</title>
+  <title>Houdini samples: Circles with props + JS + Mouse</title>
 
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Circles into Web Component</h1>
-  <!--
-  To convince WebComponentsMan Javier Vélez @javiervelezreye 🤘🏼
-  -->
-  <houdini-circles></houdini-circles>
+  <h1>Circles with props + JS + Mouse</h1>
+  <div id="app" class="wrapper"></div>
 
-  <script src="index.js"></script>
   <script>
     if ('paintWorklet' in CSS) {
       CSS.paintWorklet.addModule('worklet.js');
     }
   </script>
+  <script src="main.js"></script>
 </body>
 </html>
