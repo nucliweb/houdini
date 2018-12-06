@@ -8,7 +8,6 @@
 - [Cicles with properties and change values with Javascript](paint/circles-props-js/)
 - [Cicles with properties and change values with Mouse Event](paint/circles-props-js-mouse/)
 - [Cicles with properties into Web Component](paint/circles-propsweb-component/)
-- [Cicles](paint/circles/)
 
 ## Properties & Values API
 
