@@ -1,4 +1,4 @@
-# CSS Houdini samples
+# CSS Houdini experiments
 
 ## Paint API
 
