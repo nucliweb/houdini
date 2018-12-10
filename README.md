@@ -2,12 +2,12 @@
 
 ## Paint API
 
-- [Cicles](paint/circles/)
-- [Cicles with properties](paint/circles-props/)
-- [Cicles with arguments](paint/circles-args/)
-- [Cicles with properties and change values with Javascript](paint/circles-props-js/)
-- [Cicles with properties and change values with Mouse Event](paint/circles-props-js-mouse/)
-- [Cicles with properties into Web Component](paint/circles-propsweb-component/)
+- [Circles](paint/circles/)
+- [Circles with properties](paint/circles-props/)
+- [Circles with arguments](paint/circles-args/)
+- [Circles with properties and change values with Javascript](paint/circles-props-js/)
+- [Circles with properties and change values with Mouse Event](paint/circles-props-js-mouse/)
+- [Circles with properties into Web Component](paint/circles-propsweb-component/)
 
 ## Properties & Values API
 
