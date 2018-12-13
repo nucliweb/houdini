@@ -7,7 +7,7 @@
 - [Circles with arguments](paint/circles-args/)
 - [Circles with properties and change values with Javascript](paint/circles-props-js/)
 - [Circles with properties and change values with Mouse Event](paint/circles-props-js-mouse/)
-- [Circles with properties into Web Component](paint/circles-propsweb-component/)
+- [Circles with properties into Web Component](paint/circles-props-web-component/)
 
 ## Properties & Values API
 
