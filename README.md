@@ -8,12 +8,12 @@ Then run `npm run dev` to run web server and enjoy it.
 
 ## Paint API
 
-- [Circles](paint/circles/)
-- [Circles with properties](paint/circles-props/)
-- [Circles with arguments](paint/circles-args/)
-- [Circles with properties and change values with Javascript](paint/circles-props-js/)
-- [Circles with properties and change values with Mouse Event](paint/circles-props-js-mouse/)
-- [Circles with properties into Web Component](paint/circles-props-web-component/)
+- [Circles](src/paint/circles/)
+- [Circles with properties](src/paint/circles-props/)
+- [Circles with arguments](src/paint/circles-args/)
+- [Circles with properties and change values with Javascript](src/paint/circles-props-js/)
+- [Circles with properties and change values with Mouse Event](src/paint/circles-props-js-mouse/)
+- [Circles with properties into Web Component](src/paint/circles-props-web-component/)
 
 ## Properties & Values API
 
@@ -25,7 +25,8 @@ Then run `npm run dev` to run web server and enjoy it.
 
 ## Animation Worklet
 
-- TODO
+- [Logo Animation](src/animation-worklet/logo-animation/)
+- [Logo Scroll Aniamtion](src/animation-worklet/logo-scroll-aniamtion/)
 
 ## Layout Worklet
 
