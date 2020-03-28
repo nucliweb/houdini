@@ -1,0 +1,29 @@
+{
+  "name": "houdini",
+  "version": "1.0.0",
+  "description": "CSS Houdini experiments",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "dev": "serve src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nucliweb/houdini.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Joan León",
+    "twitter": "@nucliweb",
+    "mail": "joan.leon@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nucliweb/houdini/issues"
+  },
+  "homepage": "https://github.com/nucliweb/houdini#readme",
+  "devDependencies": {
+    "serve": "11.3.0"
+  }
+}

@@ -1,0 +1,22 @@
+body {
+  background-color: #353535;
+  color: #ffffff;
+  font-family: sans-serif;
+  padding: 2em;
+}
+
+.wrapper {
+  border-left: 1px solid rgb(31, 160, 70);
+  padding-left: 2em;
+  margin-left: 300px;
+}
+
+.logo {
+  position: absolute;
+  width: 200px;
+}
+
+pre {
+  height: 500px;
+  overflow: auto
+}
