@@ -1,6 +1,6 @@
 # CSS Houdini experiments
 
-> If you want more information about **CSS Houdini**, please visit the [Awesome CSS Houdini][(](https://github.com/CSSHoudini/awesome-css-houdini)) to access to a lot of documentation, samples, videos and articles.
+> If you want more information about **CSS Houdini**, please visit the [Awesome CSS Houdini](https://github.com/CSSHoudini/awesome-css-houdini) to access to a lot of documentation, samples, videos and articles.
 
 To view samples run `npm install` or `yarn install` to install dependencies, only to have a web server to navegate the samples folders.
 
