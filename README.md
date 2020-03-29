@@ -26,7 +26,7 @@ Then run `npm run dev` to run web server and enjoy it.
 ## Animation Worklet
 
 - [Logo Animation](src/animation-worklet/logo-animation/)
-- [Logo Scroll Aniamtion](src/animation-worklet/logo-scroll-aniamtion/)
+- [Logo Scroll Animation](src/animation-worklet/logo-scroll-animation/)
 
 ## Layout Worklet
 
