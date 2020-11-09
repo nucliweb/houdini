@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>CSS Houdini experiments</title>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#ff69b4" />
+    <meta name="description" content="CSS Houdini experiments" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="bundle.css" />
+    <script src="bundle.js" type="module" defer></script>
+  </head>
+  <body>
+    <header class="HoudiniHeader">
+      <h1 class="HoudiniHeader-title">CSS Houdini Experiments</h1>
+    </header>
+    <section class="HoudiniApi">
+      <h2 class="HoudiniApi-title">CSS Paint</h2>
+      <ul class="HoudiniApi-list">
+        <li class="HoudiniApi-listItem">
+          <a
+            href="./experiments/paint/circles"
+            title="Circles"
+            class="HoudiniApi-listItem-link"
+          >
+            <h3 class="HoudiniApi-listItem-name">Circles</h3>
+            <p class="HoudiniApi-listItem-desc">
+              This example show a background circles, without options to change
+              these properties as color, size or offset. All the properties are
+              defined inside worklet.
+            </p>
+          </a>
+        </li>
+        <li class="HoudiniApi-listItem">
+          <a
+            href="./experiments/paint/circles-args"
+            title="Circles Arguments"
+            class="HoudiniApi-listItem-link"
+          >
+            <h3 class="HoudiniApi-listItem-name">Circles Arguments</h3>
+            <p class="HoudiniApi-listItem-desc">This example....</p>
+          </a>
+        </li>
+        <li class="HoudiniApi-listItem">
+          <a
+            href="./experiments/paint/circles-props"
+            title="Circles Properties"
+            class="HoudiniApi-listItem-link"
+          >
+            <h3 class="HoudiniApi-listItem-name">Circles Properties</h3>
+            <p class="HoudiniApi-listItem-desc">This example....</p>
+          </a>
+        </li>
+        <li class="HoudiniApi-listItem">
+          <a
+            href="./experiments/paint/circles-props-js"
+            title="Circles Properties with JS"
+            class="HoudiniApi-listItem-link"
+          >
+            <h3 class="HoudiniApi-listItem-name">Circles Properties with JS</h3>
+            <p class="HoudiniApi-listItem-desc">This example....</p>
+          </a>
+        </li>
+        <li class="HoudiniApi-listItem">
+          <a
+            href="./experiments/paint/circles-props-js-mouse"
+            title="Circles Dynamic Properties with Mouse"
+            class="HoudiniApi-listItem-link"
+          >
+            <h3 class="HoudiniApi-listItem-name">
+              Circles Dynamic Properties with Mouse
+            </h3>
+            <p class="HoudiniApi-listItem-desc">This example....</p>
+          </a>
+        </li>
+        <li class="HoudiniApi-listItem">
+          <a
+            href="./experiments/paint/circles-props-web-component"
+            title="Circles Properties with Web Components"
+            class="HoudiniApi-listItem-link"
+          >
+            <h3 class="HoudiniApi-listItem-name">
+              Circles Properties with Web Components
+            </h3>
+            <p class="HoudiniApi-listItem-desc">This example....</p>
+          </a>
+        </li>
+        <li class="HoudiniApi-listItem">
+          <a
+            href="./experiments/paint/grid"
+            title="Color Grid"
+            class="HoudiniApi-listItem-link"
+          >
+            <h3 class="HoudiniApi-listItem-name">Color Grid</h3>
+            <p class="HoudiniApi-listItem-desc">This example....</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="HoudiniApi">
+      <h2 class="HoudiniApi-title">Animation Worklet</h2>
+      <ul class="HoudiniApi-list">
+        <li class="HoudiniApi-listItem">
+          <a
+            href="./experiments/animation-worklet/logo-animation"
+            title="Logo Animation"
+            class="HoudiniApi-listItem-link"
+          >
+            <h3 class="HoudiniApi-listItem-name">Logo Animation</h3>
+            <p class="HoudiniApi-listItem-desc">This example....</p>
+          </a>
+        </li>
+        <li class="HoudiniApi-listItem">
+          <a
+            href="./experiments/animation-worklet/logo-scroll-animation"
+            title="Logo Scroll Animation"
+            class="HoudiniApi-listItem-link"
+          >
+            <h3 class="HoudiniApi-listItem-name">Logo Scroll Animation</h3>
+            <p class="HoudiniApi-listItem-desc">This example....</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      Joan Leon |
+      <a href="https://twitter.com/nucliweb" target="_blank">@nucliweb</a>
+    </section>
+  </body>
+</html>

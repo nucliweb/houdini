@@ -1,0 +1,11 @@
+.wrapper {
+  /* Presetation properties */
+  border: 1px dashed var(--color-medium);
+  height: var(--size);
+  padding: 1em;
+  box-sizing: content-box;
+  width: var(--size);
+
+  /* Houdini Magic */
+  background: paint(circles, 10, 5, 100%, 2, 0);
+}

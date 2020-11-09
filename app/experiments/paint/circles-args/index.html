@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Houdini samples: Circles with arguments</title>
+
+    <link rel="stylesheet" href="../../../css/experiments.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="/" title="Back to the index" class="Back"> < Back</a>
+    </header>
+    <h1>Circles with arguments</h1>
+    <div class="wrapper"></div>
+    <pre class="Code" data-code=".css">
+background: paint(circles, 10, 5, 100%, 2, 0);</pre
+    >
+    <script>
+      (async function () {
+        if (CSS["paintWorklet"] === undefined)
+          await import("https://unpkg.com/css-paint-polyfill");
+
+        CSS.paintWorklet.addModule("worklet.js");
+      })();
+    </script>
+  </body>
+</html>

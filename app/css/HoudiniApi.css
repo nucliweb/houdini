@@ -1,0 +1,40 @@
+.HoudiniApi {
+
+}
+
+.HoudiniApi-title {
+  color: var(--text);
+  margin-block-end: 1ch;
+}
+
+.HoudiniApi-list {
+  margin: 0;
+  padding: 0;
+}
+
+.HoudiniApi-listItem {
+  border-left: 4px solid transparent;
+  border-bottom: 1px dashed var(--textLight);
+  list-style: none;
+  margin-block-end: 2ch;
+  padding-inline-start: .5ch;
+  padding-block-end: 1ch;
+
+  &:hover {
+    border-left: 4px solid currentColor;
+  } 
+}
+
+.HoudiniApi-listItem-link {
+  text-decoration: none;
+}
+
+.HoudiniApi-listItem-name {
+  display: block;
+  line-height: 2ch;
+}
+
+.HoudiniApi-listItem-desc {
+  color: var(--text);
+  line-height: 2ch;
+}

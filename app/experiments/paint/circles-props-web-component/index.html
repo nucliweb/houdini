@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Houdini samples: Circles with properties</title>
+
+    <link rel="stylesheet" href="../../../css/experiments.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="/" title="Back to the index" class="Back"> < Back</a>
+    </header>
+    <h1>Circles into Web Component</h1>
+    <houdini-circles></houdini-circles>
+    <pre class="Code" data-code=".html">
+&lt;houdini-circles&gt;&lt;/houdini-circles&gt;</pre
+    >
+    <script>
+      (async function () {
+        if (CSS["paintWorklet"] === undefined)
+          await import("https://unpkg.com/css-paint-polyfill");
+
+        CSS.paintWorklet.addModule("worklet.js");
+      })();
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+.HoudiniHeader {
+  margin-block-end: 1em;
+  padding: 0;
+}
+
+.HoudiniHeader-title {
+  background-color: var(--brand);
+  color: white;
+  padding: 1ch .5ch .5ch;
+}
