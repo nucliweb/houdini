@@ -1,4 +1,4 @@
-// (bundle from remote urls) 
+// (bundle from remote urls)
 // import Whatever from 'https://unpkg.com/whatever'
 
 // (bundle from npm)
@@ -12,4 +12,4 @@
 // (file as string)
 // import { default as index_css }  from './css/index.css'
 
-console?.log('💀')
+console.log("CSS Is Part Of The Web");
