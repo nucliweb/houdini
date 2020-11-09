@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Houdini samples: Circles</title>
 
-    <link rel="stylesheet" href="../../../css/experiments.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/experiments/css/index.css" />
+    <link rel="stylesheet" href="/experiments/paint/circles/styles.css" />
   </head>
   <body>
     <header>
@@ -21,7 +21,7 @@
         if (CSS["paintWorklet"] === undefined)
           await import("https://unpkg.com/css-paint-polyfill");
 
-        CSS.paintWorklet.addModule("worklet.js");
+        CSS.paintWorklet.addModule("/experiments/paint/circles/worklet.js");
       })();
     </script>
   </body>

@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Houdini samples: Circles with arguments</title>
 
-    <link rel="stylesheet" href="../../../css/experiments.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/experiments/css/index.css" />
+    <link rel="stylesheet" href="/experiments/paint/circles-args/styles.css" />
   </head>
   <body>
     <header>
@@ -23,7 +23,9 @@ background: paint(circles, 10, 5, 100%, 2, 0);</pre
         if (CSS["paintWorklet"] === undefined)
           await import("https://unpkg.com/css-paint-polyfill");
 
-        CSS.paintWorklet.addModule("worklet.js");
+        CSS.paintWorklet.addModule(
+          "/experiments/paint/circles-args/worklet.js"
+        );
       })();
     </script>
   </body>

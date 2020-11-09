@@ -1,8 +1,14 @@
 :root {
-  --size: 600px;
+  --size: 300px;
   --color-dark: #353535;
   --color-medium: #858585;
   --color-light: #d3d3d3;
+}
+
+@media (min-width: 600px) {
+  :root {
+    --size: 600px;
+  }
 }
 
 html,
@@ -18,7 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: sans-serif;
-  justify-content: center;
+  padding-top: 1em;
 }
 
 .Back {
@@ -39,6 +45,7 @@ body {
   color: var(--color-light);
   font-size: 1.4em;
   margin: 2em 0;
+  overflow: auto;
   padding: 2em 1em;
   position: relative;
   width: var(--size);
@@ -50,6 +57,15 @@ body {
   display: block;
   padding: .5ch;
   position: absolute;
-  right: 0;
+  left: 0;
   top: 0;
+}
+
+.wrapper {
+  /* Presetation properties */
+  border: 1px dashed var(--color-medium);
+  height: var(--size);
+  padding: 1em;
+  box-sizing: content-box;
+  width: var(--size);
 }

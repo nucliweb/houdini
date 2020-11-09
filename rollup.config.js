@@ -31,6 +31,9 @@ const dev = {
         ],
       ],
     }),
+    copy({
+      targets: [{ src: "app/experiments", dest: "dist" }],
+    }),
   ],
   watch: {
     exclude: ["node_modules/**"],
@@ -55,11 +58,11 @@ const prod = {
       exclude: "node_modules/**",
       presets: [["@babel/env", { modules: false }]],
     }),
+    copy({
+      targets: [{ src: "app/experiments", dest: "dist" }],
+    }),
     compiler(),
     terser(),
-    copy({
-      targets: [{ src: "app/experiments/**/*", dest: "dist/experiments" }],
-    }),
   ],
 };
 

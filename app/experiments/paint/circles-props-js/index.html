@@ -6,9 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Houdini samples: Circles with properties & Javascript</title>
 
-    <link rel="stylesheet" href="dat.gui.css" />
-    <link rel="stylesheet" href="../../../css/experiments.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="/experiments/paint/circles-props-js/dat.gui.css"
+    />
+    <link rel="stylesheet" href="/experiments/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="/experiments/paint/circles-props-js/styles.css"
+    />
   </head>
   <body>
     <header>
@@ -30,10 +36,12 @@
         if (CSS["paintWorklet"] === undefined)
           await import("https://unpkg.com/css-paint-polyfill");
 
-        CSS.paintWorklet.addModule("worklet.js");
+        CSS.paintWorklet.addModule(
+          "/experiments/paint/circles-props-js/worklet.js"
+        );
       })();
     </script>
-    <script src="dat.gui.min.js"></script>
-    <script src="main.js"></script>
+    <script src="/experiments/paint/circles-props-js/dat.gui.min.js"></script>
+    <script src="/experiments/paint/circles-props-js/main.js"></script>
   </body>
 </html>

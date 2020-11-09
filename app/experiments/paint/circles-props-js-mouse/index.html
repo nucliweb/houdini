@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Houdini samples: Circles with props + JS + Mouse</title>
 
-    <link rel="stylesheet" href="../../../css/experiments.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/experiments/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="/experiments/paint/circles-props-js-mouse/styles.css"
+    />
   </head>
   <body>
     <header>
@@ -31,9 +34,11 @@
         if (CSS["paintWorklet"] === undefined)
           await import("https://unpkg.com/css-paint-polyfill");
 
-        CSS.paintWorklet.addModule("worklet.js");
+        CSS.paintWorklet.addModule(
+          "/experiments/paint/circles-props-js-mouse/worklet.js"
+        );
       })();
     </script>
-    <script src="main.js"></script>
+    <script src="/experiments/paint/circles-props-js-mouse/main.js"></script>
   </body>
 </html>
