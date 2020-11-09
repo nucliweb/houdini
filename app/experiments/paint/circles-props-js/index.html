@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Houdini samples: Circles with properties & Javascript</title>
+
+    <link rel="stylesheet" href="dat.gui.css" />
+    <link rel="stylesheet" href="../../../css/experiments.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="/" title="Back to the index" class="Back"> < Back</a>
+    </header>
+    <h1>Circles with properties & Javascript</h1>
+    <div id="app" class="wrapper"></div>
+    <pre class="Code" data-code=".css">
+  --circles-offset: 10;
+  --circles-count: 5;
+  --circles-opacity: 0.6;
+  --circles-strokeWeight: 2;
+  --circles-fill: 0;
+
+  background: paint(circles);</pre
+    >
+    <script>
+      (async function () {
+        if (CSS["paintWorklet"] === undefined)
+          await import("https://unpkg.com/css-paint-polyfill");
+
+        CSS.paintWorklet.addModule("worklet.js");
+      })();
+    </script>
+    <script src="dat.gui.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

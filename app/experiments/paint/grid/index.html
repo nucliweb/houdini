@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Houdini - Paint: background</title>
+    <link rel="stylesheet" href="../../../css/experiments.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="/" title="Back to the index" class="Back"> < Back</a>
+    </header>
+    <div class="no-dice" hidden>
+      You need
+      <a href="https://drafts.css-houdini.org/css-paint-api/"
+        ><code>PaintWorklet</code></a
+      >
+      to see this demo :(
+    </div>
+
+    <script type="houdini/paint-worklet">
+      const PROPS = [
+          '--type-background',
+      ];
+
+      registerPaint('grid', class {
+          static get inputProperties() {
+          return PROPS;
+          }
+
+          paint(ctx, geometry, props) {
+              this.options = {
+                  pointArea: 25000,
+                  maxOpacity: .5,
+                  lineColor: 'transparent',
+                  lineWidth: 0
+              };
+
+              this.drawGrid(ctx, geometry)
+          }
+
+          drawBoxes(ctx, geometry) {
+              for (let i = 0; i < geometry.width; i++) {
+                  for (let j = 0; j < geometry.width; j++) {
+                      ctx.fillStyle = `rgb(${i * 5}, ${j * 5}, ${(i+j) * 50})`
+                      ctx.fillRect(j * 20, i * 20, 20, 20)
+                  }
+              }
+          }
+
+          drawGrid(ctx, geometry) {
+              for (let i = 0; i < geometry.width; i++) {
+                  for (let j = 0; j < geometry.width; j++) {
+                      ctx.strokeStyle = `rgb(${i * 5}, ${j * 5}, ${(i+j) * 50})`
+                      ctx.strokeRect(j * 20, i * 20, 20, 20)
+                  }
+              }
+          }
+      })
+    </script>
+    <script>
+      (async function () {
+        if (CSS["paintWorklet"] === undefined)
+          await import("https://unpkg.com/css-paint-polyfill");
+
+        const paintModule = URL.createObjectURL(
+          new Blob(
+            [
+              document.querySelector('[type="houdini/paint-worklet"]')
+                .textContent,
+            ],
+            { type: "text/javascript" }
+          )
+        );
+        await CSS.paintWorklet.addModule(paintModule);
+      })();
+    </script>
+  </body>
+</html>

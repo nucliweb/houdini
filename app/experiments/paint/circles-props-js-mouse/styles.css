@@ -1,0 +1,19 @@
+.wrapper {
+  /* Presetation properties */
+  border: 1px dashed var(--color-medium);
+  height: var(--size);
+  padding: 1em;
+  box-sizing: content-box;
+  width: var(--size);
+
+  /* Houdini Magic */
+  --circles-offset: 10;
+  --circles-count: 20;
+  --circles-opacity: 0.5;
+  --circles-strokeWeight: 2;
+  --circles-fill: 0;
+  --pos-x: 0;
+  --pos-y: 0;
+
+  background: paint(circles);
+}

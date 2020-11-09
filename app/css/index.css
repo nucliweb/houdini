@@ -1,0 +1,86 @@
+/* 
+(bundle from remote urls) 
+@import '//css-from-url';
+
+(bundle from npm)
+@import 'css-from-npm';
+
+(bundle from local)
+@import 'localfile.css' 
+
+(PresetENV)
+CSS powers @ https://preset-env.cssdb.org/features
+
+(Easings)
+only imports what you use 
+https://easings.net
+*/
+
+/* Components */ 
+@import './HoudiniHeader.css';
+@import './HoudiniApi.css';
+
+
+:root {
+  --surface: lch(98 0 0);
+  --text: lch(30 0 0);
+  --textLight: lch(80 0 0);
+  --brand: lch(67 42 266);
+  --brandAternative: lch(40 74 307);
+}
+
+html {
+  block-size: 100%;
+  box-sizing: border-box;
+  inline-size: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  box-sizing: border-box;
+
+  display: grid;
+  place-content: start center;
+  gap: 2ch;
+
+  background: var(--surface);
+  color: var(--text);
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 1ch;
+}
+
+body,p,ul,dl,dd,dt,figure,
+h1,h2,h3,h4,h5,h6,small {
+  margin: 0;
+}
+
+a {
+  color: var(--brand);
+
+  &:visited {
+    color: var(--brandAternative);
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  line-height: 1.5;
+  max-inline-size: 45ch;
+}
+
+p {
+  line-height: 2;
+  font-size: 1.25rem;
+  font-weight: 300;
+  max-inline-size: 45ch;
+}
+
+::selection {
+  background-color: var(--brand);
+  color: white;
+}
+
