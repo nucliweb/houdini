@@ -51,7 +51,7 @@ body {
   background: var(--surface);
   color: var(--text);
   font-family: 'Josefin Sans', sans-serif;
-  padding: 1ch;
+  padding: 1ch 1ch 8ch;
 }
 
 body,p,ul,dl,dd,dt,figure,
