@@ -62,7 +62,10 @@ const prod = {
       presets: [["@babel/env", { modules: false }]],
     }),
     copy({
-      targets: [{ src: "app/experiments", dest: "dist" }],
+      targets: [
+        { src: "app/experiments", dest: "dist" },
+        { src: "app/assets", dest: "dist" },
+      ],
     }),
     compiler(),
     terser(),
