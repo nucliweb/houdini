@@ -1,7 +1,7 @@
 {
   "name": "houdini",
   "version": "1.0.0",
-  "description": "CSS Houdini experiments",
+  "description": "CSS Houdini Experiments",
   "main": "index.js",
   "private": true,
   "browserslist": [
@@ -48,7 +48,7 @@
   },
   "keywords": [],
   "author": {
-    "name": "Joan León",
+    "name": "Joan Leon",
     "twitter": "@nucliweb",
     "mail": "joan.leon@gmail.com"
   },
@@ -56,5 +56,5 @@
   "bugs": {
     "url": "https://github.com/nucliweb/houdini/issues"
   },
-  "homepage": "https://github.com/nucliweb/houdini#readme"
+  "homepage": "https://css-houdini-experiments.netlify.app/"
 }
