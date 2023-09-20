@@ -49,7 +49,7 @@
               }
           }
 
-          drawGrid(ctx, geometry) {
+          (ctx, geometry) {
               for (let i = 0; i < geometry.width; i++) {
                   for (let j = 0; j < geometry.width; j++) {
                       ctx.strokeStyle = `rgb(${i * 5}, ${j * 5}, ${(i+j) * 50})`

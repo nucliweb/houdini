@@ -6,7 +6,7 @@ body {
   overflow: hidden;
   font-family: system-ui, sans-serif;
   background-color: #fff;
-  background-image: paint(grid);
+  background-image: paint(box);
 }
 .no-dice {
   font-size: 15vmin;

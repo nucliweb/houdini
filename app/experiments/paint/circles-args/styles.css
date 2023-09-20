@@ -1,4 +1,4 @@
 .wrapper {
   /* Houdini Magic */
-  background: paint(circles, 10, 5, 100%, 2, 0);
+  background: paint(circles, 20, 8, 100%, 2, 0);
 }
